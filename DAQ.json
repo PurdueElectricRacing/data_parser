@@ -1,0 +1,316 @@
+  {
+  "addresses": [
+    {
+      "address": "0A0",
+      "bytes": [
+        "MOD_A_TEMP",
+        "MOD_A_TEMP",
+        "MOD_B_TEMP",
+        "MOD_B_TEMP",
+        "MOD_C_TEMP",
+        "MOD_C_TEMP",
+        "GATE_TEMP",
+        "GATE_TEMP"
+      ]
+    },
+    {
+      "address": "0A1",
+      "bytes": [
+        "CONTROL_TEMP",
+        "CONTROL_TEMP",
+        "RTD1_TEMP",
+        "RTD1_TEMP",
+        "RTD2_TEMP",
+        "RTD2_TEMP",
+        "RTD3_TEMP",
+        "RTD3_TEMP"
+      ]
+    },
+    {
+      "address": "0A2",
+      "bytes": [
+        "RTD4_TEMP",
+        "RTD4_TEMP",
+        "RTD5_TEMP",
+        "RTD5_TEMP",
+        "MOTOR_TEMP",
+        "MOTOR_TEMP",
+        "TORQUE_SHUDDER",
+        "TORQUE_SHUDDER"
+      ]
+    },
+    {
+      "address": "0A2",
+      "bytes": [
+        "RTD4_TEMP",
+        "RTD4_TEMP",
+        "RTD5_TEMP",
+        "RTD5_TEMP",
+        "MOTOR_TEMP",
+        "MOTOR_TEMP",
+        "TORQUE_SHUDDER",
+        "TORQUE_SHUDDER"
+      ]
+    },
+    {
+      "address": "0A3",
+      "bytes": [
+        "ANALOG_IN1",
+        "ANALOG_IN1",
+        "ANALOG_IN2",
+        "ANALOG_IN2",
+        "ANALOG_IN3",
+        "ANALOG_IN3",
+        "ANALOG_IN4",
+        "ANALOG_IN4"
+      ]
+    },
+    {
+      "address": "0A4",
+      "bytes": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "address": "0A5",
+      "bytes": [
+        "MOTOR_ANGLE",
+        "MOTOR_ANGLE",
+        "MOTOR_SPEED",
+        "MOTOR_SPEED",
+        "ELECTRICAL_FREQUENCY",
+        "ELECTRICAL_FREQUENCY",
+        "DELTA_RESOLVER",
+        "DELTA_RESOLVER"
+      ]
+    },
+    {
+      "address": "0A6",
+      "bytes": [
+        "PHASE_A_CURRENT",
+        "PHASE_A_CURRENT",
+        "PHASE_B_CURRENT",
+        "PHASE_B_CURRENT",
+        "PHASE_C_CURRENT",
+        "PHASE_C_CURRENT",
+        "DC_BUS_CURRENT",
+        "DC_BUS_CURRENT"
+      ]
+    },
+    {
+      "address": "0A7",
+      "bytes": [
+        "DC_BUS_VOLTAGE",
+        "DC_BUS_VOLTAGE",
+        "OUTPUT_VOLTAGE",
+        "OUTPUT_VOLTAGE",
+        "VAB_Vd_VOLTAGE",
+        "VAB_Vd_VOLTAGE",
+        "VBC_Vq_VOLTAGE",
+        "VBC_Vq_VOLTAGE"
+      ]
+    },
+    {
+      "address": "0A8",
+      "bytes": [
+        "FLUX_COMMAND",
+        "FLUX_COMMAND",
+        "FLUX_FEEDBACK",
+        "FLUX_FEEDBACK",
+        "Id_FEEDBACK",
+        "Id_FEEDBACK",
+        "Iq_FEEDBACK",
+        "Iq_FEEDBACK"
+      ]
+    },
+    {
+      "address": "0A9",
+      "bytes": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+      {
+      "address": "0AA",
+      "bytes": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "address": "0AB",
+      "bytes": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "address": "0AC",
+      "bytes": [
+        "COMMANDED_TORQUE",
+        "COMMANDED_TORQUE",
+        "TORQUE_ON_FEEDBACK",
+        "TORQUE_ON_FEEDBACK",
+        "POWER_ON_TIMER",
+        "POWER_ON_TIMER",
+        "POWER_ON_TIMER",
+        "POWER_ON_TIMER"
+      ]
+    },
+    {
+      "address": "0AD",
+      "bytes": [
+        "MODULATION_INDEX",
+        "MODULATION_INDEX",
+        "FLUX_WEAKENING_OUTPUT",
+        "FLUX_WEAKENING_OUTPUT",
+        "Id_COMMAND",
+        "Id_COMMAND",
+        "Iq_COMMAND",
+        "Iq_COMMAND"
+      ]
+    },
+    {
+      "address": "0AE",
+      "bytes": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "address": "700",
+      "bytes": [
+        "FRONT_WHEEL_SPD_L",
+        "FRONT_WHEEL_SPD_L",
+        "FRONT_WHEEL_SPD_L",
+        "FRONT_WHEEL_SPD_L",
+        "FRONT_WHEEL_SPD_R",
+        "FRONT_WHEEL_SPD_R",
+        "FRONT_WHEEL_SPD_R",
+        "FRONT_WHEEL_SPD_R"
+      ]
+    },
+    {
+      "address": "701",
+      "bytes": [
+        "REAR_WHEEL_SPD_L",
+        "REAR_WHEEL_SPD_L",
+        "REAR_WHEEL_SPD_L",
+        "REAR_WHEEL_SPD_L",
+        "REAR_WHEEL_SPD_R",
+        "REAR_WHEEL_SPD_R",
+        "REAR_WHEEL_SPD_R",
+        "REAR_WHEEL_SPD_R"
+      ]
+    },
+    {
+      "address": "720",
+      "bytes": [
+        "COOLANT_MOTOR",
+        "COOLANT_MOTOR",
+        "COOLANT_RAD",
+        "COOLANT_RAD",
+        "COOLANT_MC",
+        "COOLANT_MC",
+        "",
+        ""
+      ]
+    },
+    {
+      "address": "721",
+      "bytes": [
+        "COOLANT_FLOW",
+        "COOLANT_FLOW",
+        "COOLANT_FLOW",
+        "COOLANT_FLOW",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "address": "421",
+      "bytes": [
+        "IMU_TYPE",
+        "IMU_X_AXIS",
+        "IMU_X_AXIS",
+        "IMU_Y_AXIS",
+        "IMU_Y_AXIS",
+        "IMU_Z_AXIS",
+        "IMU_Z_AXIS",
+        "IMU_RESOLUTION"
+      ]
+    },
+    {
+      "address": "6B1",
+      "bytes": [
+        "PACK_CURRENT",
+        "PACK_CURRENT",
+        "PACK_VOLTAGE",
+        "PACK_VOLTAGE",
+        "SOC_.5_PRCNT",
+        "HIGH_TEMP",
+        "LOW_CELL_VOLT",
+        "LOW_CELL_VOLT"
+      ]
+    },
+    {
+      "address": "501",
+      "bytes": [
+        "RAW_THROTTLE_1",
+        "RAW_THROTTLE_1",
+        "RAW_THROTTLE_2",
+        "RAW_THROTTLE_2",
+        "RAW_BRAKE_1",
+        "RAW_BRAKE_1",
+        "RAW_BRAKE_2",
+        "RAW_BRAKE_2"
+      ]
+    },
+    {
+      "address": "0C0",
+      "bytes": [
+        "REQUESTED_TORQUE",
+        "REQUESTED_TORQUE",
+        "DONT_CARE",
+        "DONT_CARE",
+        "RINEHART_FORWARD",
+        "INVERTER_ENABLE",
+        "",
+        ""
+      ]
+    }
+  ]
+}
