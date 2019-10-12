@@ -259,6 +259,31 @@
         "",
         ""
       ]
+    },{
+      "address": "730",
+      "bytes": [
+        "SHOCK_POT_F_L",
+        "SHOCK_POT_F_L",
+        "SHOCK_POT_F_R",
+        "SHOCK_POT_F_R",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "address": "731",
+      "bytes": [
+        "SHOCK_POT_R_L",
+        "SHOCK_POT_R_L",
+        "SHOCK_POT_R_R",
+        "SHOCK_POT_R_R",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "address": "421",

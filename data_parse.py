@@ -84,38 +84,46 @@ def parseEntry(timestamp, entry, filemaps):
   convertedValues.append(previousValue)
     # exit()
   
+  i = 0
   scalar = 1
-  # coolant flow speed / wheel speed
-  if address == "721" or address == "700" or address == "701":
-    scalar = 1 / 10000.0
-  # motor coolant
-  elif address == "720":
-    scalar = 1 / 100.0
-  # IMU data, 0 = accelerometer, 1 = gyro 
-  elif address == "421":
-    if convertedValues[0] == 0:
-      scalar = (0.122 / 1000)
-    else:
-      scalar = (8.75 / 1000)
-  elif address == '501':
-    index = len(convertedValues - 1)
-    val = ctypes.c_int32(convertedValues[index])
-    convertedValues[index] = val;
-  elif address == '0C0':
-    index = len(convertedValues - 1)
-    val = ctypes.c_int32(convertedValues[index])
-    convertedValues[index] = val;
-    scaler = 1 / 100.0
+  while i < len(convertedValues):
+    # exit()
+    # coolant flow speed / wheel speed
+    if address == "721" or address == "700" or address == "701":
+      scalar = 1
+    # motor coolant
+    elif address == "720":
+      scalar = 1 / 100.0
+    # IMU data, 0 = accelerometer, 1 = gyro 
+    elif address == "421":
+     
+      if convertedValues[0] == 0:
+        convertedValues[0] = 'Accelerometer'
+        scalar = (0.122 / 1000)
+      else:
+        convertedValues[0] = 'Gyroscope'
+        scalar = (8.75 / 1000)
+      i += 1
+    # pedalbox data not sure what's happening here
+    elif address == '501':
+      index = len(convertedValues - 1)
+      val = ctypes.c_int32(convertedValues[index])
+      convertedValues[index] = val;
+    # torque command to MC
+    elif address == '0C0':
+      index = len(convertedValues - 1)
+      val = ctypes.c_int32(convertedValues[index])
+      convertedValues[index] = val;
+      scaler = 1 / 100.0
+
+    convertedValues[i] = float(convertedValues[i]) * scalar;
+    i += 1
+
 
   # print(convertedValues)
-  if scalar != 1:
-    i = 0
-    while i < len(convertedValues):
-      convertedValues[i] = float(convertedValues[i]) * scalar;
-      i += 1
-    # exit()
-
-
+    
+  if address == '0AC':
+    print (convertedValues);
   convertedValues.insert(0, timestamp)
   mapped_values = {address : convertedValues}
   return mapped_values
@@ -213,5 +221,6 @@ if __name__ == "__main__":
     # print(rows)
     # exit(1)
     dumpData(data=rows, file_pointers=outfiles)
+    print ('Dumping complete. Don\'t forget to flush.')
    
 
